@@ -49,7 +49,7 @@ public partial class AboutForm : Form
 
         var copyrightLabel = new Label
         {
-            Text = $"\u00a9 {DateTime.Now.Year} Nova Browser. All rights reserved. Astro Dynamics 2026",
+            Text = $"\u00a9 {DateTime.Now.Year} Nova Browser. MIT License",
             Font = new Font("Segoe UI", 9f, FontStyle.Regular),
             ForeColor = Color.FromArgb(150, 150, 150),
             AutoSize = true,
