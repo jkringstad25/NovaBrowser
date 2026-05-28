@@ -106,7 +106,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 - Publish the App for Windows
 
--- ```Powershell
+```Powershell
 dotnet publish -c Release -r win-x64 --self-contained false -o publish
 ```
 
