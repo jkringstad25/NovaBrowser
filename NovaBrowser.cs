@@ -10,10 +10,11 @@ using System.Runtime.InteropServices;
 
 namespace NovaBrowser;
 
-public partial class Form1 : Form
+public partial class NovaBrowser : Form
 {
     private bool isDarkMode = false;
     private Color accentColor = Color.FromArgb(0, 122, 204);
+
     private readonly string bookmarksFilePath;
     private readonly List<Bookmark> bookmarks = new();
     private readonly List<BrowserTab> tabs = new();
@@ -21,10 +22,12 @@ public partial class Form1 : Form
     private readonly HashSet<string> faviconLoading = new(StringComparer.OrdinalIgnoreCase);
     private readonly HashSet<Microsoft.Web.WebView2.WinForms.WebView2> initializedWebViews = new();
     private readonly object faviconLock = new();
+
     private static readonly Image defaultFavicon = CreateDefaultFavicon();
     private static readonly HttpClient httpClient = new();
     private static CoreWebView2Environment? _sharedWebViewEnvironment;
     public static string AppVersion => "1.0.0";
+
     private readonly List<string> addressHistory = new();
     private BrowserTab? activeTab;
     private Button? moreButton;
@@ -35,6 +38,7 @@ public partial class Form1 : Form
     private ContextMenuStrip? urlContextMenu;
     private Panel? defaultBrowserContentPanel;
     private Panel? homePageContentPanel;
+    
     private bool showHomeButton = true;
     private bool homePageIsNewTab = true;
     private string customHomeUrl = "https://www.bing.com";
@@ -104,7 +108,7 @@ public partial class Form1 : Form
         }
     }
 
-    public Form1()
+    public NovaBrowser()
     {
         InitializeComponent();
         _ = this.Handle;
