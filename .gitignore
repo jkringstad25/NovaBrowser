@@ -1,0 +1,23 @@
+# Build outputs
+bin/
+obj/
+publish/
+
+# Visual Studio
+.vs/
+*.csproj.user
+*.suo
+*.userprefs
+
+# IDE / Editor
+.sixth/
+.vscode/
+.idea/
+
+# Installer output
+Installer/Output/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
