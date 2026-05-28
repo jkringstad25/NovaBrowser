@@ -11,7 +11,7 @@ static class Program
         ApplicationConfiguration.Initialize();
         try
         {
-            Application.Run(new Form1());
+            Application.Run(new NovaBrowser());
         }
         catch (Exception ex)
         {

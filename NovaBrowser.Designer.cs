@@ -1,6 +1,6 @@
 ﻿namespace NovaBrowser;
 
-partial class Form1
+partial class NovaBrowser
 {
     private System.ComponentModel.IContainer components = null!;
     private Panel topContainerPanel;
@@ -36,7 +36,7 @@ partial class Form1
 
     private void InitializeComponent()
     {
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NovaBrowser));
         topContainerPanel = new Panel();
         bookmarksPanel = new FlowLayoutPanel();
         topPanel = new Panel();
@@ -294,7 +294,7 @@ partial class Form1
         btnAbout.Text = "About";
         btnAbout.Click += btnAbout_Click;
         // 
-        // Form1
+        // NovaBrowser
         // 
         AutoScaleMode = AutoScaleMode.None;
         BackColor = Color.FromArgb(24, 24, 24);
@@ -303,7 +303,7 @@ partial class Form1
         Controls.Add(statusStrip1);
         Controls.Add(topContainerPanel);
         Icon = (Icon)resources.GetObject("$this.Icon");
-        Name = "Form1";
+        Name = "NovaBrowser";
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Nova Browser";
         WindowState = FormWindowState.Maximized;

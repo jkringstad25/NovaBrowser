@@ -29,7 +29,7 @@ public partial class AboutForm : Form
 
         var versionLabel = new Label
         {
-            Text = $"Version {Form1.AppVersion}",
+            Text = $"Version {NovaBrowser.AppVersion}",
             Font = new Font("Segoe UI", 10f, FontStyle.Regular),
             ForeColor = Color.FromArgb(200, 200, 200),
             AutoSize = true,
