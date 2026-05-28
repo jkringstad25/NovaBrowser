@@ -102,7 +102,10 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ## Build and Run
 
-- DotNet Run
+Build and Run the code from inside Visual Studio Code.
+```
+DotNet Run
+```
 
 - Publish the App for Windows
 
