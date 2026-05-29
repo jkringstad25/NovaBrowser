@@ -92,6 +92,24 @@ Nova Browser — Version 1.0.0
 - .NET 8 Desktop Runtime
 - Microsoft Edge WebView2 Runtime
 
+## Linux (Arch / CachyOS) — AppImage
+
+A Linux port is available as an AppImage, maintained by a contributor. It has been tested on Arch Linux and CachyOS and does not require Wine.
+
+Differences from the Windows version:
+- Uses a native Linux web engine instead of Microsoft Edge WebView2
+- Search engine is user-configurable: choose between DuckDuckGo, Brave Search, or Google
+
+To run the AppImage:
+1. Download the .AppImage file from the Releases page:
+   https://github.com/jkringstad25/NovaBrowser/releases
+2. Make it executable:
+   chmod +x NovaBrowser-*.AppImage
+3. Run it:
+   ./NovaBrowser-*.AppImage
+
+The Linux-Version branch is maintained separately. See the `Linux-Version` branch for source code.
+
 ## License
 The MIT License (MIT)
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
